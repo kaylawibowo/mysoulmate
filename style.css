@@ -12,6 +12,8 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    padding:20px;
+    box-sizing:border-box;
 }
 
 .hidden{
@@ -30,12 +32,58 @@ button{
     font-size:18px;
 }
 
+/* GIFT */
+
+.gift-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+.gift-box{
+    font-size:250px;
+    text-align:center;
+    margin:20px auto;
+    animation:float 3s ease-in-out infinite, glow 2s infinite;
+    filter:drop-shadow(0 0 20px white);
+    transition:0.5s;
+    cursor:pointer;
+}
+
+.gift-box.open{
+    transform:scale(0);
+    opacity:0;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+}
+
+@keyframes glow{
+    0%,100%{
+        filter:drop-shadow(0 0 10px white);
+    }
+    50%{
+        filter:drop-shadow(0 0 35px white);
+    }
+}
+
+/* SURAT */
+
 .letter{
     max-width:700px;
     margin:auto;
     font-size:22px;
     line-height:1.8;
 }
+
+/* FOTO */
 
 .gallery{
     margin-top:50px;
@@ -45,121 +93,9 @@ button{
     width:250px;
     border-radius:15px;
     margin:10px;
+    cursor:pointer;
 }
 
-.heart{
-    font-size:120px;
-    animation:beat 1s infinite;
-}
-
-@keyframes beat{
-    50%{
-        transform:scale(1.15);
-    }
-}
-
-.gift-box {
-    font-size: 250px;
-    text-align: center;
-    display: block;
-    margin: 30px auto;
-    animation: float 3s ease-in-out infinite,glow 2s infinite;
-    filter: drop-shadow(0 0 20px white);
-}
-@keyframes glow {
-    0%,100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-}
-.gift-container {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:100%;
-}
-
-.gift-box {
-    text-align: center;
-    animation: float 3s ease-in-out infinite, glow 2s infinite;
-    filter: drop-shadow(0 0 20px white);
-    transition: 0.5s;
-}
-
-.gift-box.open {
-    transform: scale(0);
-    opacity: 0;
-}
-
-
-@keyframes float {
-    0%,100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
- {
-        filter: drop-shadow(0 0 35px white);
-    }
-}
-
-
-.hidden {
-    display:none;
-}
-.flower{
-    position: fixed;
-    top: -20px;
-    color: white;
-    font-size: 20px;
-    animation: fall linear forwards;
-    pointer-events: none;
-    z-index: 999;
-}
-
-@keyframes fall{
-    from{
-        transform: translateY(-20px);
-    }
-    to{
-        transform: translateY(110vh);
-    }
-}
-{
-    font-size:120px;
-    animation: heartbeat 1.2s infinite;
-}
-
-@keyframes heartbeat{
-    0%,100%{
-        transform: scale(1);
-    }
-
-    50%{
-        transform: scale(1.2);
-    }
-}
-.star{
-    position:fixed;
-    color:white;
-    animation: twinkle 2s infinite;
-    pointer-events:none;
-    z-index:0;
-}
-
-@keyframes twinkle{
-    0%,100%{
-        opacity:0.2;
-    }
-    50%{
-        opacity:1;
-    }
-}
 .photo-modal{
     position:fixed;
     top:0;
@@ -178,45 +114,78 @@ button{
     max-height:80%;
     border-radius:20px;
 }
-{
-    display:none;
+
+/* HEART */
+
+.heart{
+    font-size:120px;
+    animation:heartbeat 1.2s infinite;
 }
+
+@keyframes heartbeat{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.2);
+    }
+}
+
+/* FLOWERS */
+
+.flower{
+    position:fixed;
+    top:-20px;
+    color:white;
+    font-size:20px;
+    animation:fall linear forwards;
+    pointer-events:none;
+    z-index:999;
+}
+
+@keyframes fall{
+    from{
+        transform:translateY(-20px);
+    }
+    to{
+        transform:translateY(110vh);
+    }
+}
+
+/* STARS */
+
+.star{
+    position:fixed;
+    color:white;
+    animation:twinkle 2s infinite;
+    pointer-events:none;
+    z-index:0;
+}
+
+@keyframes twinkle{
+    0%,100%{
+        opacity:0.2;
+    }
+    50%{
+        opacity:1;
+    }
+}
+
+/* ENVELOPE */
 
 .envelope{
     font-size:80px;
     cursor:pointer;
     text-align:center;
-    animation: float 2s infinite;
+    animation:float 2s infinite;
 }
 
 .envelope p{
     font-size:20px;
     color:white;
 }
-@media (max-width: 768px){
 
-    h1{
-        font-size:32px;
-    }
-
-    .gift-box{
-        font-size:180px;
-    }
-
-    .letter{
-        width:90%;
-        margin:auto;
-        font-size:18px;
-        line-height:1.8;
-    }
-
-    .gallery img{
-        width:80%;
-        margin:10px auto;
-        display:block;
-    }
-
-}
+/* HALAMAN SURPRISE */
 
 #gift{
     min-height:100vh;
@@ -224,6 +193,28 @@ button{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    padding-top:80px;
-    box-sizing:border-box;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    h1{
+        font-size:32px;
+    }
+
+    .gift-box{
+        font-size:200px;
+    }
+
+    .letter{
+        width:90%;
+        font-size:18px;
+    }
+
+    .gallery img{
+        width:80%;
+        display:block;
+        margin:10px auto;
+    }
 }
