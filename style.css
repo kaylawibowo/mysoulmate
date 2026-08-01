@@ -1,0 +1,56 @@
+body{
+    margin:0;
+    background:black;
+    color:white;
+    text-align:center;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.page{
+    min-height:100vh;
+    padding:40px;
+}
+
+.hidden{
+    display:none;
+}
+
+h1{
+    font-family:'Playfair Display', serif;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.letter{
+    max-width:700px;
+    margin:auto;
+    font-size:22px;
+    line-height:1.8;
+}
+
+.gallery{
+    margin-top:50px;
+}
+
+.gallery img{
+    width:250px;
+    border-radius:15px;
+    margin:10px;
+}
+
+.heart{
+    font-size:120px;
+    animation:beat 1s infinite;
+}
+
+@keyframes beat{
+    50%{
+        transform:scale(1.15);
+    }
+}
