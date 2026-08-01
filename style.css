@@ -56,50 +56,16 @@ button{
 }
 
 .gift-box {
-    width: 120px;
-    height: 100px;
-    margin: 40px auto;
-    position: relative;
-    cursor: pointer;
-    animation: shake 2s infinite;
+    width: 80px;
+    text-align: center;
+    margin: 30px;
+    animation: bounce 1.5s infinite;
 }
-
-.box {
-    width: 120px;
-    height: 80px;
-    background: white;
-    border: 3px solid black;
-    position: absolute;
-    bottom: 0;
-}
-
-.lid {
-    width: 130px;
-    height: 25px;
-    background: black;
-    position: absolute;
-    top: 0;
-    left: -5px;
-    z-index: 2;
-}
-
-.ribbon {
-    width: 20px;
-    height: 100px;
-    background: black;
-    position: absolute;
-    left: 50px;
-    z-index: 3;
-}
-
-@keyframes shake {
+@keyframes bounce {
     0%,100% {
-        transform: rotate(0);
+        transform: translateY(0);
     }
-    25% {
-        transform: rotate(5deg);
-    }
-    75% {
-        transform: rotate(-5deg);
+    50% {
+        transform: translateY(-15px);
     }
 }
