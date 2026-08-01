@@ -33,8 +33,8 @@ setInterval(() => {
         flower.remove();
     },7000);
 
-},500);
-for(let i=0;i<30;i++){
+},2000);
+for(let i=0;i<10;i++){
 
     const star=document.createElement("div");
 
