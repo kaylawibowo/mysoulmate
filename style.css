@@ -42,7 +42,7 @@ button{
     text-align:center;
     margin:20px auto;
     position:relative;
-    top:30px;
+    top:20px;
     animation:float 3s ease-in-out infinite, glow 2s infinite;
 }
 
@@ -177,7 +177,7 @@ button{
     text-align:center;
     animation:float 2s infinite;
     position:relative;
-    top:15px;
+    top:10px;
 }
 
 .envelope p{
