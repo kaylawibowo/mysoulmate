@@ -8,9 +8,10 @@ body{
 
 .page{
     min-height:100vh;
-}
-#letterPage{
-    padding-top:80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
 .hidden{
@@ -81,7 +82,6 @@ button{
 }
 
 .gift-box {
-    font-size: 180px;
     text-align: center;
     animation: float 3s ease-in-out infinite, glow 2s infinite;
     filter: drop-shadow(0 0 20px white);
@@ -103,12 +103,7 @@ button{
     }
 }
 
-
-@keyframes glow {
-    0%,100% {
-        filter: drop-shadow(0 0 10px white);
-    }
-    50% {
+ {
         filter: drop-shadow(0 0 35px white);
     }
 }
@@ -135,7 +130,7 @@ button{
         transform: translateY(110vh);
     }
 }
-.heart{
+{
     font-size:120px;
     animation: heartbeat 1.2s infinite;
 }
@@ -183,8 +178,7 @@ button{
     max-height:80%;
     border-radius:20px;
 }
-
-.hidden{
+{
     display:none;
 }
 
@@ -222,4 +216,14 @@ button{
         display:block;
     }
 
+}
+
+#gift{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding-top:80px;
+    box-sizing:border-box;
 }
