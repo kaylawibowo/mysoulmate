@@ -218,3 +218,10 @@ button{
         margin:10px auto;
     }
 }
+#cover{
+    gap: 30px;
+}
+
+#gift{
+    gap: 20px;
+}
