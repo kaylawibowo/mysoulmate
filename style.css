@@ -144,3 +144,19 @@ button{
         transform: scale(1.2);
     }
 }
+.star{
+    position:fixed;
+    color:white;
+    animation: twinkle 2s infinite;
+    pointer-events:none;
+    z-index:0;
+}
+
+@keyframes twinkle{
+    0%,100%{
+        opacity:0.2;
+    }
+    50%{
+        opacity:1;
+    }
+}
