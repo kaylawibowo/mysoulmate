@@ -112,3 +112,21 @@ button{
 .hidden {
     display:none;
 }
+.flower{
+    position: fixed;
+    top: -20px;
+    color: white;
+    font-size: 20px;
+    animation: fall linear forwards;
+    pointer-events: none;
+    z-index: 999;
+}
+
+@keyframes fall{
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(110vh);
+    }
+}
