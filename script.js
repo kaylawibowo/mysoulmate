@@ -14,3 +14,23 @@ document.getElementById("letterPage").classList.remove("hidden");
 
 }
 
+setInterval(() => {
+
+    const flower = document.createElement("div");
+
+    flower.classList.add("flower");
+
+    flower.innerHTML = "❀";
+
+    flower.style.left = Math.random() * window.innerWidth + "px";
+
+    flower.style.animationDuration =
+        (Math.random() * 3 + 4) + "s";
+
+    document.body.appendChild(flower);
+
+    setTimeout(() => {
+        flower.remove();
+    },7000);
+
+},500);
