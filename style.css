@@ -8,7 +8,9 @@ body{
 
 .page{
     min-height:100vh;
-    padding:40px;
+}
+#letterPage{
+    padding-top:80px;
 }
 
 .hidden{
@@ -59,7 +61,7 @@ button{
     font-size: 250px;
     text-align: center;
     display: block;
-    margin: 50px auto;
+    margin: 30px auto;
     animation: float 3s ease-in-out infinite,glow 2s infinite;
     filter: drop-shadow(0 0 20px white);
 }
@@ -72,7 +74,10 @@ button{
     }
 }
 .gift-container {
-    cursor: pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
 }
 
 .gift-box {
@@ -193,4 +198,28 @@ button{
 .envelope p{
     font-size:20px;
     color:white;
+}
+@media (max-width: 768px){
+
+    h1{
+        font-size:32px;
+    }
+
+    .gift-box{
+        font-size:180px;
+    }
+
+    .letter{
+        width:90%;
+        margin:auto;
+        font-size:18px;
+        line-height:1.8;
+    }
+
+    .gallery img{
+        width:80%;
+        margin:10px auto;
+        display:block;
+    }
+
 }
