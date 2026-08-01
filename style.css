@@ -71,3 +71,44 @@ button{
         transform: translateY(-20px);
     }
 }
+.gift-container {
+    cursor: pointer;
+}
+
+.gift-box {
+    font-size: 180px;
+    text-align: center;
+    animation: float 3s ease-in-out infinite, glow 2s infinite;
+    filter: drop-shadow(0 0 20px white);
+    transition: 0.5s;
+}
+
+.gift-box.open {
+    transform: scale(0);
+    opacity: 0;
+}
+
+
+@keyframes float {
+    0%,100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+@keyframes glow {
+    0%,100% {
+        filter: drop-shadow(0 0 10px white);
+    }
+    50% {
+        filter: drop-shadow(0 0 35px white);
+    }
+}
+
+
+.hidden {
+    display:none;
+}
