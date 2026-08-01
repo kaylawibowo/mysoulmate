@@ -56,18 +56,18 @@ button{
 }
 
 .gift-box {
-    font-size: 160px;
+    font-size: 180px;
     text-align: center;
     display: block;
     margin: 50px auto;
-    animation: bounce 1.5s infinite,glow 2s infinite;
-    filter: drop-shadow(0 0 15px white);
+    animation: float 3s ease-in-out infinite,glow 2s infinite;
+    filter: drop-shadow(0 0 20px white);
 }
 @keyframes glow {
     0%,100% {
-        filter: drop-shadow(0 0 15px white);
+        transform: translateY(0);
     }
     50% {
-        filter: drop-shadow(0 0 15px white);
+        transform: translateY(-20px);
     }
 }
