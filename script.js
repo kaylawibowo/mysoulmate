@@ -50,3 +50,20 @@ for(let i=0;i<30;i++){
     document.body.appendChild(star);
 
 }
+
+function openPhoto(photo){
+
+    document.getElementById("photoModal")
+        .classList.remove("hidden");
+
+    document.getElementById("modalImg")
+        .src = photo.src;
+
+}
+
+document.getElementById("photoModal")
+.addEventListener("click", function(){
+
+    this.classList.add("hidden");
+
+});
