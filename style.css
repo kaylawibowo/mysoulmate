@@ -45,10 +45,9 @@ button{
     font-size:250px;
     text-align:center;
     margin:20px auto;
+    position:relative;
+    top:40px;
     animation:float 3s ease-in-out infinite, glow 2s infinite;
-    filter:drop-shadow(0 0 20px white);
-    transition:0.5s;
-    cursor:pointer;
 }
 
 .gift-box.open{
