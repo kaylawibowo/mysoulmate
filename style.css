@@ -56,9 +56,10 @@ button{
 }
 
 .gift-box {
-    width: 80px;
+    font-size: 120px;
     text-align: center;
-    margin: 30px;
+    display: block;
+    margin: 40px auto;
     animation: bounce 1.5s infinite;
 }
 @keyframes bounce {
