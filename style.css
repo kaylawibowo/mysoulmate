@@ -130,3 +130,17 @@ button{
         transform: translateY(110vh);
     }
 }
+.heart{
+    font-size:120px;
+    animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat{
+    0%,100%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+}
