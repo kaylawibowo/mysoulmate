@@ -79,7 +79,7 @@ document.getElementById("intro")
 
     const music = document.getElementById("bgMusic");
 
-    music.currentTime = 156;
+    music.currentTime = 175;
     
         music.play();
 
