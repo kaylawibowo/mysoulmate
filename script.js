@@ -67,3 +67,17 @@ document.getElementById("photoModal")
     this.classList.add("hidden");
 
 });
+
+document.getElementById("intro")
+.addEventListener("click", function(){
+
+    document.getElementById("intro")
+        .style.display = "none";
+
+    document.getElementById("cover")
+        .classList.remove("hidden");
+
+    document.getElementById("bgMusic")
+        .play();
+
+});
