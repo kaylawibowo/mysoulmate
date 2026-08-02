@@ -77,7 +77,7 @@ document.getElementById("intro")
     document.getElementById("cover")
         .classList.remove("hidden");
 
-    const music = doucument.getElementById("bgMusic");
+    const music = document.getElementById("bgMusic");
 
     music.currentTime = 48;
     
