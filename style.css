@@ -218,3 +218,12 @@ button{
         margin:10px auto;
     }
 }
+
+#intro{
+    cursor:pointer;
+}
+
+#intro p{
+    opacity:0.7;
+    animation:twinkle 2s infinite;
+}
